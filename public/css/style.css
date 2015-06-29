@@ -28,6 +28,10 @@ main {
     margin: 0;
 }
 
+#todo .task.completed {
+    color: green;
+}
+
 footer {
     background: #333;
     color: #f2f2f2;

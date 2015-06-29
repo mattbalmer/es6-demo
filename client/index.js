@@ -1,1 +1,3 @@
-const APP_NAME = 'app';
+import { init } from './app';
+
+document.addEventListener('DOMContentLoaded', init);
