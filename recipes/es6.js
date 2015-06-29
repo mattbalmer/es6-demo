@@ -24,6 +24,8 @@ module.exports = function(params) {
                 this.emit('end');
             })
             .pipe(rename(params.name + '.js'))
+            .pipe(gulp.dest(params.output))
+            .pipe(rename(params.name + '.min.js'))
             .pipe(sourcemaps.init({loadMaps: true}))
             .pipe(uglify())
             .pipe(sourcemaps.write('./'))

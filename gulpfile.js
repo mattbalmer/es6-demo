@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 
 var recipes = {
-    es6: require('./recipes/ngm-js')
+    es6: require('./recipes/es6')
 };
 
 gulp.task('js', recipes.es6({
